@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap');
+
+.attribution { font-size: 11px; text-align: center; position: fixed; align-self: end; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+:root{
+	font-size: 18px;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: 'Kumbh Sans', sans-serif;
+	color: hsl(229, 23%, 23%);
+	background-color: hsl(185, 75%, 39%);
+}
+
+section.main{
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+
+.card{
+	width: 350px;
+	border-radius: 20px;
+	background: #fff;
+	overflow: hidden;
+	text-align: center;
+}
+
+.card-header{
+	height: 130px;
+	background-image: url(images/bg-pattern-card.svg);
+	background-size: cover;
+	border-radius: 20px 20px 0 0;
+}
+
+.user-profile{
+	padding: 0 20px 25px;
+}
+
+.user-profile .img-holder{
+	width: 100px;
+	height: 100px;
+	border: 5px solid white;
+	border-radius: 50%;
+	margin: -50px auto 25px auto;
+	overflow: hidden;
+}
+
+.user-profile .img-holder img{
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
+.name-age{
+	font-size: 1.2rem;
+	margin-bottom: 12px;
+}
+
+h2{
+	font-size: 1.2rem;
+	margin-bottom: 15px;
+}
+.age, .city, .meta{
+	color: hsl(227, 10%, 46%);
+	font-weight: 400;
+}
+
+.city{
+	font-size: .9rem;
+}
+.card-footer{
+	border-top: 1px solid hsl(0, 0%, 85%);
+	display: flex;
+	padding: 0 30px;
+}
+
+.card-footer .item{
+	flex: 1;
+	height: 100px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.card-footer .item .value{
+	font-size: 1rem;
+	margin-bottom: 6px;
+}
+
+.card-footer .item .meta{
+	font-size: .6rem;
+	letter-spacing: 1px;
+}
