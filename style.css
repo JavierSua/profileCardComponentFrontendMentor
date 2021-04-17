@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap');
 
-.attribution { font-size: 11px; text-align: center; position: fixed; align-self: end; }
+.attribution { font-size: 11px; text-align: center; position: fixed; bottom: 0; }
 .attribution a { color: hsl(228, 45%, 44%); }
 
 :root{
@@ -19,12 +19,13 @@ body{
 	background-color: hsl(185, 75%, 39%);
 }
 
-section.main{
+section{
 	height: 100vh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	position: relative;
+	overflow: hidden;
 }
 
 .card{
@@ -33,6 +34,7 @@ section.main{
 	background: #fff;
 	overflow: hidden;
 	text-align: center;
+	position: relative;
 }
 
 .card-header{
@@ -101,4 +103,34 @@ h2{
 .card-footer .item .meta{
 	font-size: .6rem;
 	letter-spacing: 1px;
+}
+
+/*BACKGROUND*/
+
+.circles .c1, .circles .c2{
+	position: absolute;
+	animation: 2s circles forwards;
+}
+
+.circles .c1{
+	top: -60%;
+	left: -13%;
+	transform: translate(-10%, -5%);
+	opacity: 0;
+}
+
+.circles .c2{
+	bottom: -75%;
+	right: -10%;
+	transform: translate(10%, 5%);
+}
+
+@keyframes circles{
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+		transform: translate(0);
+	}
 }
